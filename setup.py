@@ -74,8 +74,8 @@ extras["docs"] = ["recommonmark", "sphinx", "sphinx-markdown-tables", "sphinx-rt
 extras["dev"] = extras["testing"] + extras["quality"] + ["mecab-python3", "scikit-learn", "tensorflow", "torch"]
 
 setup(
-    name="transformers",
-    version="2.4.1",
+    name="transformers2",
+    version="2.4.1+fb1",
     author="Thomas Wolf, Lysandre Debut, Victor Sanh, Julien Chaumond, Google AI Language Team Authors, Open AI team Authors, Facebook AI Authors, Carnegie Mellon University Authors",
     author_email="thomas@huggingface.co",
     description="State-of-the-art Natural Language Processing for TensorFlow 2.0 and PyTorch",
@@ -99,8 +99,6 @@ setup(
         "tqdm >= 4.27",
         # for OpenAI GPT
         "regex != 2019.12.17",
-        # for XLNet
-        "sentencepiece",
         # for XLM
         "sacremoses",
     ],
